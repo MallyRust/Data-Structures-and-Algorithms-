@@ -11,6 +11,9 @@ Lecture notes on Data Structures and Insights from self-learning
 
 
 ### Graphs
-**Glosary**
+####Glosary####
 
-A graph G is defined as an ordered set (V,E), where V(G) represents set of vertices(nodes) and E(G) represents the edges that connect these vertices.
+A **graph** G is defined as an ordered set (V,E), where V(G) represents set of vertices(nodes) and E(G) represents the edges that connect these vertices.
+**Adjacent and neigbors** - two vertices are adjacent/neigbors if there is an edge connecting them
+**Degree of node** - is the total number of edges containing the node. If deg(u) = 0, it means that u does not belong to any edge and such a node is known as an isolated node.
+
