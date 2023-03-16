@@ -29,10 +29,21 @@ Figure below shows regular graphs
 
 Graphs can be **undirected** and **directed**:
 
-In an undirected graph, edges do not have any direction associated with them. That is, nodes can be traversed from A to B as well as from B to A. 
+In an **undirected graph**, edges do not have any direction associated with them. That is, nodes can be traversed from A to B as well as from B to A. 
 
-In a directed graph, edges form an ordered pair. If there is an edge from A to B, then there is a path from A to B but not from B to A. 
+In a **directed graph**, edges form an ordered pair. If there is an edge from A to B, then there is a path from A to B but not from B to A. 
 
+**Connected graph** a graph is said to be connected if for any two vertices (u, v) in V there is a path from u to v. That is to say that there are no isolated nodes in a connected graph. 
 
+A connected graph that does not have any cycle is called a tree. Therefore, a tree is treated as a special graph.
 
+**Complete graph** A graph G is said to be complete if all its nodes are fully connected. That is, there is a path from one node to every other node in the graph. A complete graph has n(n–1)/2 edges, where n is the number of nodes in G.
+
+**Labelled graph or weighted graph** in a weighted graph, the edges of the graph are assigned some weight or length. 
+
+**Multiple edges** distinct edges which connect the same end-points. 
+
+**Loop** an edge that has identical end-points is called a loop.
+
+**Multi-graph** a graph with multiple edges and/or loops is called a multi-graph. 
 
