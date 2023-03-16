@@ -18,7 +18,6 @@ Lecture notes on Data Structures and Insights from self-learning
 - **Degree of node** - is the total number of edges containing the node. If deg(u) = 0, it means that u does not belong to any edge and such a node is known as an isolated node.
 - **Size of a graph** - the total number of edges in it.
 - **Regular graph** - graph where each vertex has the same number of neighbors. 
-- ![image](https://user-images.githubusercontent.com/69750029/225704110-bdb49306-7163-4091-b494-4d802f326ff5.png)
 
 
 
