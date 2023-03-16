@@ -35,8 +35,6 @@ In a **directed graph**, edges form an ordered pair. If there is an edge from A 
 
 **Connected graph** a graph is said to be connected if for any two vertices (u, v) in V there is a path from u to v. That is to say that there are no isolated nodes in a connected graph. 
 
-A connected graph that does not have any cycle is called a tree. Therefore, a tree is treated as a special graph.
-
 **Complete graph** A graph G is said to be complete if all its nodes are fully connected. That is, there is a path from one node to every other node in the graph. A complete graph has n(n–1)/2 edges, where n is the number of nodes in G.
 
 **Labelled graph or weighted graph** in a weighted graph, the edges of the graph are assigned some weight or length. 
