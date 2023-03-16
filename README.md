@@ -11,5 +11,6 @@ Lecture notes on Data Structures and Insights from self-learning
 
 
 ### Graphs
-Glosary
+**Glosary**
+
 A graph G is defined as an ordered set (V,E), where V(G) represents set of vertices(nodes) and E(G) represents the edges that connect these vertices.
