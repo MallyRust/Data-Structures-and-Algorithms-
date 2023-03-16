@@ -20,8 +20,10 @@ Lecture notes on Data Structures and Insights from self-learning
 - **Size of a graph** - the total number of edges in it.
 - **Path** - a finite or infinite sequence of edges which joins a sequence of vertices.
 - **Closed Path** - A path P is known as a closed path if the edge has the same end-points. That is, if v0 = vn.
+- **Simple path** -  A path that repeats no vertex, except that the first and last may be the same vertex.
+- **Cycle** -  A path in which the first and the last vertices are same. 
 
-- **Regular graph** - graph where each vertex has the same number of neighbors. That is, every node has the same degree.
+**Regular graph** - graph where each vertex has the same number of neighbors. That is, every node has the same degree.
 
 Figure below shows regular graphs
 
