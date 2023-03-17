@@ -24,8 +24,7 @@ Lecture notes on Data Structures and Insights from self-learning
 - **Cycle** -  A path in which the first and the last vertices are same. 
 
 **Regular graph** - graph where each vertex has the same number of neighbors. That is, every node has the same degree.
-
-Figure below shows regular graphs
+<img src="images/regGr.png" width=350>
 
 Graphs can be **undirected** and **directed**:
 
