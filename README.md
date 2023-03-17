@@ -14,7 +14,7 @@ Lecture notes on Data Structures and Insights from self-learning
 ### Graphs
 #### Glosary
 
-- A **graph** G is defined as an ordered set (V,E), where V(G) represents set of vertices(nodes) and E(G) represents the edges that connect these vertices.
+- A **graph** G is defined as an ordered set (V,E), where V(G) represents set **of vertices(nodes)** and E(G) represents the **edges** that connect these vertices.
 - **Adjacent and neigbors** - two vertices are adjacent/neigbors if there is an edge connecting them
 - **Degree of node** - is the total number of edges containing the node. If deg(u) = 0, it means that u does not belong to any edge and such a node is known as an isolated node.
 - **Size of a graph** - the total number of edges in it.
@@ -62,5 +62,50 @@ Therefore, `deg(u) = indeg(u) + outdeg`
 - Sequential representation by using an adjacency matrix.
 <br> <img src="images/matrixGr.png" width=400>
 
+This code creates a graph with adj matrix representation
+```
+void graph(){
+int n; //number of vertices
+int e; //number of edges
+int u; //from vertex
+int v; //to vertex
+
+int matrix[n][n];
+for (int i=1; i<=n; i++);
+{
+cout<<"Number of edges"<<i;
+cout<<"From:";
+cin>>u;
+cout<<"To:";
+cin>>v;
+//For undirected graphs
+matrix[u][v]=1;
+matrix[v][u]=1;
+  }
+}
+```
 - Linked representation by using an adjacency list that stores the neighbors of a node using a linked list.
-<br> <img src="images/LinkedGr.png" width=400>
+<br> <img src="images/AdjancyListGr.png" width=400>
+
+This code creates a graph with adj list representation
+``` 
+int main() {
+int n, e, u, v;
+cout<<"Number of vertices";
+cin>>n;
+cout<<"Number of edges";
+cin>>e;
+vector<int> graph[n];
+for (int i=1; i<=n; i++){
+cout<<"From:";
+cin>>u;
+cout<<"To:";
+cin>>v;
+addEdge(u,v);
+ }
+}
+
+void addEdge(vector<int> graph, int u, int v){
+graph[u].push_back(v);
+graph[v].push_back(u);
+}
