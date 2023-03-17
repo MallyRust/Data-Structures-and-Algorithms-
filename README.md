@@ -60,7 +60,7 @@ Therefore, `deg(u) = indeg(u) + outdeg`
 
 #### Representation of graphs:
 - Sequential representation by using an adjacency matrix.
-<br> <img src="images/matrixGr.png" width=200>
+<br> <img src="images/matrixGr.png" width=400>
 
 - Linked representation by using an adjacency list that stores the neighbors of a node using a linked list.
-<br> <img src="images/LinkedGr.png" width=200>
+<br> <img src="images/LinkedGr.png" width=400>
