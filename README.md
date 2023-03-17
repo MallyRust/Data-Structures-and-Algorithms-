@@ -89,23 +89,36 @@ matrix[v][u]=1;
 
 This code creates a graph with adj list representation
 ``` 
-int main() {
-int n, e, u, v;
-cout<<"Number of vertices";
-cin>>n;
-cout<<"Number of edges";
-cin>>e;
-vector<int> graph[n];
-for (int i=1; i<=n; i++){
-cout<<"From:";
-cin>>u;
-cout<<"To:";
-cin>>v;
-addEdge(u,v);
- }
-}
-
-void addEdge(vector<int> graph, int u, int v){
+void addEdge(vector<int> graph[], int u, int v){
 graph[u].push_back(v);
 graph[v].push_back(u);
 }
+
+void print(vector<int> graph[], int n){
+    for (int i = 0; i < n; i++) {
+        cout << "Vertex " << i << ": ";
+        for (int j = 0; j < graph[i].size(); j++) {
+            cout << graph[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+int n, e, u, v;
+cout<<"Number of vertices ";
+cin>>n;
+cout<<"Number of edges ";
+cin>>e;
+vector<int> graph[n];
+for (int i=0; i<=n; i++){
+cout<<"From: ";
+cin>>u;
+cout<<"To: ";
+cin>>v;
+addEdge(graph, u,v);
+print(graph, n);
+ }
+}
+
+```
