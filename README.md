@@ -122,3 +122,64 @@ print(graph, n);
 }
 
 ```
+
+## Graph Traversal
+
+### Depth-First Search
+- About algorithm https://youtube.com/watch?v=iaBEKo5sM7w&feature=shares
+- The DFS strategy is to go "deep" into the graph as far as possible
+- Implemented by using stack
+- Time complexity ` O(Vertices+Edges)
+<br> <img src="images/DFS.png" width=400>
+
+```
+#include <iostream>
+#include <stack>
+#include <vector>
+
+using namespace std;
+
+const int N = 100; // maximum number of nodes in the graph
+vector<int> adjList[N+1]; // adjacency list of the graph
+int status[N+1]; // status of each node in the graph
+
+void dfs(int start) {
+    stack<int> stk;
+    stk.push(start);
+    status[start] = 2;
+
+    while (!stk.empty()) {
+        int node = stk.top();
+        stk.pop();
+        cout << node << " "; // process the node here
+        status[node] = 3;
+
+        for (int neighbor : adjList[node]) {
+            if (status[neighbor] == 1) {
+                stk.push(neighbor);
+                status[neighbor] = 2;
+            }
+        }
+    }
+}
+
+int main() {
+    int n, m; // n is the number of nodes, m is the number of edges
+    cin >> n >> m;
+
+    for (int i = 1; i <= m; i++) {
+        int u, v; // edge between u and v
+        cin >> u >> v;
+        adjList[u].push_back(v);
+        adjList[v].push_back(u); // remove this line for directed graphs
+    }
+
+    for (int i = 1; i <= n; i++) {
+        status[i] = 1; // set all nodes to ready state
+    }
+
+    dfs(1); // start DFS from node 1
+
+    return 0;
+}
+```
